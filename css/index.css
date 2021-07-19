@@ -40,10 +40,18 @@ p.content {color: #111; text-align: justify; line-height: 1.5;}
 .tour-wrapper .city-wrap {}
 .tour-wrapper .city {width: 32%; float: left;}
 .tour-wrapper .city:nth-child(2) {margin: 0 2%;}
-.tour-wrapper .city .img-wp img:hover {opacity: .7;}
+.tour-wrapper .city .img-wp img:hover {opacity: .6;}
 .tour-wrapper .city .content-wp {background-color: #fff; padding: 16px;}
 .tour-wrapper .city .content-wp .title {font-weight: bold; margin-bottom: 16px;}
 .tour-wrapper .city .content-wp .datetime {color: #777; margin-bottom: 16px;}
 .tour-wrapper .city .content-wp .content {font-size: 15px; line-height: 1.35; margin-bottom: 16px;}
 .tour-wrapper .city .content-wp .bt-buy {background-color: #000; color: #fff; padding: 10px 14px; display: inline-block; cursor: pointer;}
 .tour-wrapper .city .content-wp .bt-buy:hover {background-color: #bbb; color: #000;}
+
+/************ .contact-wrapper ***********/
+.contact-wrapper h3.title {margin-bottom: 48px;}
+.contact-wrapper .contact-wrap {}
+.contact-wrapper .contact-wrap .info-wp {float: left; width:50%; border: 1px solid red; font-size: 18px;}
+.contact-wrapper .contact-wrap .info-wp > div {margin-bottom: 12px;}
+.contact-wrapper .contact-wrap .info-wp > div > i {width: 30px;}
+.contact-wrapper .contact-wrap .form-wp {float: right; width: 50%; border: 1px solid blue;}
