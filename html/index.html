@@ -85,8 +85,8 @@
           <div class="content-wp">
             <h4 class="title">New York</h4>
             <h4 class="datetime">Fri 27 Nov 2016</h4>
-            <p class="content">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <div class="bt-buy">Buy Tickets</div>
+            <p class="content" style="font-weight: 300;">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <div class="bt-buy bt-black">Buy Tickets</div>
           </div>
         </div>
         <div class="city">
@@ -97,7 +97,7 @@
             <h4 class="title">Paris</h4>
             <h4 class="datetime">Sat 28 Nov 2016</h4>
             <p class="content">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <div class="bt-buy">Buy Tickets</div>
+            <div class="bt-buy bt-black">Buy Tickets</div>
           </div>
         </div>
         <div class="city">
@@ -108,7 +108,7 @@
             <h4 class="title">San Francisco</h4>
             <h4 class="datetime">Sun 29 Nov 2016</h4>
             <p class="content">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <div class="bt-buy">Buy Tickets</div>
+            <div class="bt-buy bt-black">Buy Tickets</div>
           </div>
         </div>
       </div>
@@ -120,7 +120,7 @@
     <div class="wrapper">
       <h2 class="title">CONTACT</h2>
       <h3 class="title">Fan? Drop a note!</h3>
-      <div class="contact-wrap">
+      <div class="contact-wrap clear">
         <div class="info-wp">
           <div class="addr">
             <i class="fa fa-map-marker-alt"></i>
@@ -128,22 +128,41 @@
           </div>
           <div class="phone">
             <i class="fa fa-phone-alt"></i>
-            Phone : +00 151515
+            Phone : <a href="tel:010-0000-0000">+00 151515</a>
           </div>
           <div class="email">
             <i class="fa fa-envelope"></i>
-            Email: mail@mail.com
+            Email: <a href="mailto:qimo2000@naver.com">mail@mail.com</a>
           </div>
         </div>
-        <div class="form-wp">
-        </div>
+        <form class="form-wp clear" action="#">
+          <input type="text" class="input" name="name" placeholder="Name">
+          <input type="text" class="input" name="email" placeholder="Email">
+          <input type="text" class="input" name="msg" placeholder="Message">
+          <button class="bt-submit bt-black">SEND</button>
+        </form>
       </div>
+    </div>
+    <div class="map-wrap">
+      <img src="../img/map.jpg" alt="지도" class="w100">
     </div>
   </div>
 
   <!-- .footer-wrapper -->
   <div class="footer-wrapper">
-
+    <div class="wrapper">
+      <div class="sns-wrap">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-snapchat"></i></a>
+        <a href="#"><i class="fab fa-pinterest"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <div class="copyright-wrap">
+        <div class="copyright">Powerd by <a href="#">w3.css</a></div>
+      </div>
+    </div>
   </div>
 </body>
 </html>

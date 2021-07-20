@@ -10,8 +10,15 @@
   <style>
     .wrapper {max-width: 800px; margin: 50px auto;}
     /* input {font-size: 24px; width: 150px;} */
-    .input-wrap {border-bottom: 1px solid #ccc; padding: 6px 0;}
-    .input-wrap input {width: 100%; font-size: 18px; padding: 6px; border: 1px solid #ccc}
+    .input-wrap {padding: 6px 0;}
+    .input-wrap input[type="text"],
+    .input-wrap input[type="password"],
+    .input-wrap input[type="number"] {width: 100%; font-size: 18px; padding: 6px; border: 1px solid #ccc}
+    .input-wrap label {margin-right: 16px;}
+    .input-wrap select {padding: 8px; font-size: 16px;}
+    .input-wrap select.tel,
+    .input-wrap input.tel {width: 100px; text-align: center;}
+    .input-wrap textarea {width: 100%; max-width:100%; min-height: 300px; padding: 16px;}
   </style>
 </head>
 <body>
@@ -31,7 +38,85 @@
         <input type="number" name="age" placeholder="Age" max="100" min="0" step="10">
       </div>
       <div class="input-wrap">
-        <input type="password" name="password" placeholder="Password" maxlength="10">
+        <input type="password" name="password" placeholder="Password" maxlength="10" minlength="8">
+      </div>
+      <div class="input-wrap">
+        <!-- <label>
+          <input type="radio" name="gender" value="man" checked>남자
+          </label>
+        <label>
+          <input type="radio" name="gender" value="woman">여자
+        </label> -->
+          <input type="radio" id="radioMan" name="gender" value="man" checked>
+          <label for="radioMan">남자</label>
+          <input type="radio" id="radioWoman" name="gender" value="woman">
+          <label for="radioWoman">여자</label>
+      </div>
+      <div class="input-wrap">
+        <input type="checkbox" name="hobby" id="chkMusic" value="음악감상">
+        <label for="chkMusic">음악감상</label>
+        <input type="checkbox" name="hobby" id="chkMovie" value="영화감상">
+        <label for="chkMovie">영화감상</label>
+        <input type="checkbox" name="hobby" id="chkShopping" value="쇼핑">
+        <label for="chkShopping">쇼핑</label>
+        <input type="checkbox" name="hobby" id="chkSwimming" value="수영">
+        <label for="chkSwimming">수영</label>
+      </div>
+      <div class="input-wrap">
+        <input type="file" name="upfile">
+      </div>
+      <div class="input-wrap">
+        <button type="submit">전송</button>
+      </div>
+      <div class="input-wrap">
+        <select name="tel1" class="tel">
+          <option value="" selected>선택</option>
+          <option value="010">010</option>
+          <option value="011">011</option>
+          <option value="016">016</option>
+          <option value="017">017</option>
+          <option value="018">018</option>
+          <option value="019">019</option>
+        </select>
+        -
+        <input type="text" name="tel2" class="tel" maxlength="4" minlength="4">
+        -
+        <input type="text" name="tel2" class="tel" maxlength="4" minlength="4">
+      </div>
+      <div class="input-wrap">
+        <textarea name="content" placeholder="내용을 입력하세요."></textarea>
+      </div>
+
+      <div class="input-wrap">
+        <h2>HTML5에서 추가된 type-써먹어도 된다</h2>
+        <input type="email" name="email">
+        <input type="range" name="volue" min="0" max="10" step="1" value="5">
+        <input type="search" name="search">
+        <input type="url" name="url">
+      </div>
+
+      <div class="input-wrap">
+        <h2>HTML5에서 추가된 type-IE11에선 지원이 안 된다.</h2>
+        <input type="color" name="color">
+        <input type="hidden" name="chk" value="비밀값">
+        <input type="date" name="date">
+        <input type="datetime-local" name="datetime-loacl">
+        <input type="month" name="month">
+        <input type="time" name="time">
+      </div>
+
+
+      <div class="input-wrap">
+        <button>전송</button>
+        <input type="submit" value="전송">
+        
+        <button type="button">그냥 버튼</button>
+        <input type="button" value="그냥 버튼">
+        
+        <button type="reset">초기화</button>
+        <input type="reset" value="초기화">
+
+        <input type="image" scr="../img/ny.jpg"></input>
       </div>
     </form>
   </div>
