@@ -82,18 +82,6 @@ p.content {color: #111; text-align: justify; line-height: 1.5;}
 .footer-wrapper .sns-wrap .fab:hover {opacity: .5;}
 
 /************ 반응형 ***********/
-@media screen and (max-width: 1199px) {
-  
-}
-
-@media screen and (max-width: 991px) {
-  
-}
-
-@media screen and (max-width: 767px) {
-  
-}
-
 @media screen and (max-width: 575px) {
   .header-wrapper .search-wrap {display: none;}
   .header-wrapper .bars-wrap {display: block;}
